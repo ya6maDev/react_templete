@@ -6,7 +6,7 @@ const publidDir = path.join(__dirname, '/public');
 module.exports = [
   {
     entry: [
-      './views/index.jsx',
+      './src/index.jsx',
     ],
     output: {
       path: publidDir,
@@ -31,6 +31,7 @@ module.exports = [
       hot: true,
       historyApiFallback: true,
       contentBase: publidDir,
+      stats: { colors: true },
     },
   },
   {

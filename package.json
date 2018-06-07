@@ -4,7 +4,9 @@
   "main": "index.jsx",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server"
+    "start": "node app.js",
+    "watch": "webpack -w",
+    "build": "webpack"
   },
   "dependencies": {
     "babel-core": "^6.26.0",

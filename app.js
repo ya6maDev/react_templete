@@ -14,9 +14,9 @@ const cookieParser = require('cookie-parser');
 
 const bodyParser = require('body-parser');
 
-const index = require('./routes/index');
+const index = require('./server/index');
 
-const users = require('./routes/users');
+const users = require('./server/users');
 
 const config = require('./webpack.config');
 
@@ -67,7 +67,7 @@ devServer.listen(devPort, () => {
 });
 
 app.listen(port, () => {
-  console.log('Express listening on port', port);
+  console.log('起動しました', `http://localhost:${port}`);
 });
 
 module.exports = app;
